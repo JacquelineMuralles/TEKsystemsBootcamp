@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .border-box{
+      background-color: black; 
+      color: white; 
+      border: 10px solid purple;
+    }
+    .img-box{
+      background-color: white; 
+      margin-left: 50px; 
+      margin-top: 50px; 
+      margin-bottom: 50px; 
+      padding-left: 50px; 
+      padding-top: 50px; 
+      padding-bottom: 50px;
+    }
+    .studentDatabase{
+      border: 5px solid purple;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>Hello world lorem ipsum. <br> Lorem ipsum dolor sit amet, consect et net null.</p>
+  </div>
+  <div class="border-box" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWvJQGi5XUuD_2VUEmCq6-1a-MBZAZxihgZA&usqp=CAU" alt="" class="img-box">
+  </div>
+  <span> Skate ipsum dolor sit amet, nose bump Streetstyle in Tempe bluntslide vert ho-ho hand rail. Randy Colvin body varial roll-in speed wobbles bigspin flail. Manual half-flip Jeremy Wray slob air chicken wing gap. Nosepicker lip kingpin varial Brooklyn Banks air. Saran Wrap ollie north bluntslide baseplate smith grind. Lien air indy grab pump crail grab griptape. Primo slide melancholy stoked bearings body varial Zorlac. Mongo hardware coping 50-50 front foot impossible. Locals gnarly shoveit hang-up risers. Pool hip no comply bail late. Grab ollie hole cab flip 900 Fiesta Mall rip grip.
+
+    <p class="border-box" style="background-color: pink;">Goofy footed nose hang-up death box 180 Cross Bones. Disaster Santa Cruz speed wobbles stalefish 180 impossible. Kickflip carve invert half-flip nosegrind. Nose speed wobbles dude boneless coping. Casper air crail slide Kevin Jarvis fastplant judo air. Half-cab freestyle gap Tracker Girl g-turn. Betty roll-in casper half-cab Rudy Johnson skater. Hang-up powerslide half-flip hurricane nollie. Heel flip hang-up boardslide late front foot impossible.</p>
+    
+    Handplant kickflip 180 half-cab. Launch ramp bigspin skate or die freestyle. Ollie hole sick Jason Wilson soul skate handplant. Street handplant impossible melancholy. Sick nose bump slam tic-tac. 180 nose kickflip pressure flip. Rail rail slide quarter pipe face plant. Jordan Richter cess slide crail slide axle rip grip. Bearings hanger nose blunt camel back John Cardiel. Frigid air indy grab bank Skull and Sword alley oop. Layback judo air masonite flail. Crailtap crail grab wax Christ air. Vision downhill tuna-flip pop shove-it hand rail.
+</span>
+
+<br>
+<br>
+
+<div id="studentCourseTable" class="studentDatabase">
+  <h1>Student Course</h1>
+     <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>studentId</th>
+          <th>courseId</th>
+          <th>progress</th>
+          <th>startDate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>51</td>
+          <td>58</td>
+          <td>2017-01-25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>66</td>
+          <td>2016-01-25</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>1</td>
+          <td>52</td>
+          <td>85</td>
+          <td>2017-08-25</td>
+        </tr>
+      </tbody>
+     </table>
+</div>
+
+<div id="facultyCourseTable" class="studentDatabase">
+  <h1>Faculty Course</h1>
+     <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>facultyId</th>
+          <th>courseId</th>
+        </tr>
+     </table>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>1</td>
+        <td>36</td>
+      </tr>
+    </tbody>
+</div>
+
+<div id="facultyTable" class="studentDatabase">
+  <h1>Faculty</h1>
+     <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>deptid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mathew</td>
+          <td>Merrihew</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Norman</td>
+          <td>Diana</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Cherish</td>
+          <td>Revard</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+     </table>
+</div>
+
+<br>
+<hr>
+<div>
+  <form action="">
+    <label>First Name:
+      <input name="submitted-name" autocomplete="name" />
+    </label>
+    
+    <br>
+
+    <label>Last Name:
+      <input name="submitted-name" autocomplete="name" />
+    </label>
+
+    <br>
+
+    
+    <label>Age: <input type="radio">Under 18</label>
+    <label><input type="radio">Over 18</label>
+    
+    <br>
+
+    <label>Favorite Color (check all that apply): 
+      <input type="checkbox">Green
+      <input type="checkbox">Red
+      <input type="checkbox">Purple
+      <input type="checkbox">Blue
+      <input type="checkbox">Pink
+      <input type="checkbox">Black
+    </label>
+
+    <br>
+
+    <button>Save</button>
+  </form>
+</div>
+<hr>
+<br>
+
+<form>
+  <table>
+    <tr>
+      <td>First Name:</td>
+      <td><input name="submitted-name" autocomplete="fname" /></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td><input name="submitted-name" autocomplete="lname" /></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="radio">Under 18</label></td>
+    </tr>
+  </table>
+</form>
+
+
+
+
+
+
+</body>
+</html>
