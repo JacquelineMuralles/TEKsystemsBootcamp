@@ -1,0 +1,18 @@
+body {
+  background-color: #745E58;
+}
+textarea {
+  height: 200px;
+}
+.form-control {
+  background-color: #EBDDD7;
+  border-color: #745E58;
+}
+
+button {
+  height: 50px;
+}
+
+button > p {
+  font-size: 25px;
+}

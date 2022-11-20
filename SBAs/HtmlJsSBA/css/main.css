@@ -1,0 +1,105 @@
+/* all */
+h1{
+  font-family: 'Italiana', serif;
+  font-size: 105px;
+}
+h2 {
+  font-family: 'Philosopher', sans-serif;
+}
+p a {
+  font-family: 'Share Tech', sans-serif;
+}
+p {
+  font-family: 'Share Tech', sans-serif;
+}
+
+.nav-space{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* index */
+.landing-section {
+  background-image: url(/images/jumboimg.png);
+}
+
+.text-container {
+  width: 500px;
+  height: 350px;
+  padding: 50px;
+  border: 3px solid #745E58;
+  border-radius: 12px;
+  background-color: #EBDDD7;
+  display: flex;
+  justify-content: center;
+}
+.welcome{
+  padding: 50px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.services{
+  padding: 50px;
+}
+.services, h1{
+  margin-bottom: 0px;
+}
+#servicesTagline {
+
+  margin: 0px;
+}
+
+/* events */
+.events-landing{
+  background-image: url(/images/events-landing.png);
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.events-landing-txt {
+  width: 700px;
+  height: 300px;
+  padding: 50px;
+  border-radius: 12px;
+  background-color: rgba(235, 221, 215, .5);
+  color: #745E58;
+  display: flex;
+  align-items: center;
+}
+
+.formPage{
+  background-color: #745E58;
+  padding: 50px;
+}
+
+.formPage > p{
+  font-size: 25px;
+}
+
+/* contact */
+.contactText {
+  padding: 75px;
+}
+
+.contactForm {
+  padding: 50px;
+}
+.spacing {
+  margin-top: 20px;
+}
+.form-label > p{
+  font-size: 25px;
+}
+
+/* all */
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

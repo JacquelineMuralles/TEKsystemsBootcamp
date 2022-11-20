@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/events.js"></script>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg d-flex justify-content-evenly" style="background-color:#745E58">
+  <div class="navbar-nav">
+    <a class="nav-link ms-5" href="/html/index.html" ><h2>Home</h2></a>
+    <a class="nav-link active ms-5" aria-current="page" href="#"><h2>Adventure Events</h2></a>
+    <a class="nav-link ms-5" href="/html/contact.html"><h2>Contact</h2></a>
+  </div>
+</nav>
+
+  
+  <div class="events-landing">
+    <h1 class="headerFont text-center" style="color: #745E58">Adventure Awaits</h1>
+    <div class="events-landing-txt">
+      <div>
+        <h2>Know where you want to go, but don't know what to do when you get there? No problem, search below to find fun events by location.</h2>
+      </div>
+    </div>
+  </div>
+
+<!-- form -->
+  <div class="formPage">
+    <h1 class="text-center">Find Your Adventure</h1>
+    <p class="text-center" style="padding: 10px">Tell us where you want to go and we'll show you fun adventures you can take when you get there. Select the country and a corresponding city to get your results.</p>
+    <div class="formControl">
+      <div class="row">
+        <div class="col">
+          <label for="inputCountry" class="form-label"><h2>Country</h2></label>
+            <select id="inputCountry" class="form-select" style="background-color:#EBDDD7">
+              <option selected>Country</option>
+              <option>United States</option>
+              <option>Mexico</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Spain</option>
+            </select>
+        </div>
+        <div class="col">
+          <label for="inputCity" class="form-label"><h2>City</h2></label>
+            <select id="inputCity" class="form-select"  style="background-color:#EBDDD7">
+              <option selected>City</option>
+              <option>US - Austin</option>
+              <option>US - Boulder</option>
+              <option>US - Portland</option>
+              <option>US - New York City</option>
+              <option>US - Philadelphia</option>
+              <option>US - Los Angelas</option>
+              <option>MX - Puerto Escondid</option>
+              <option>MX - Mexico City</option>
+              <option>FR - Paris</option>
+              <option>DE - Berlin</option>
+              <option>DE - Munich</option>
+              <option>ESP - Barcelona</option>
+              <option>ESP - Madrid</option>
+            </select>
+        </div>
+        <div class="col-1" style="margin-top:30px">
+          <button type="submit" class="btn btn-dark"><h2>Submit</h2></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
