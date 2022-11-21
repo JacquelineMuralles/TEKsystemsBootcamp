@@ -16,3 +16,17 @@ button {
 button > p {
   font-size: 25px;
 }
+
+.contactText {
+  padding: 75px;
+}
+
+.contactForm {
+  padding: 50px;
+}
+.spacing {
+  margin-top: 20px;
+}
+.form-label > p{
+  font-size: 25px;
+}

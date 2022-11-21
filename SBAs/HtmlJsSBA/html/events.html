@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Share+Tech&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/events.css">
   <script src="/js/events.js"></script>
 </head>
 <body>
@@ -40,8 +41,9 @@
   <div class="formPage">
     <h1 class="text-center">Find Your Adventure</h1>
     <p class="text-center" style="padding: 10px">Tell us where you want to go and we'll show you fun adventures you can take when you get there. Select the country and a corresponding city to get your results.</p>
+
     <div class="formControl">
-      <div class="row">
+      <form class="row" onsubmit=getEvents(event)>
         <div class="col">
           <label for="inputCountry" class="form-label"><h2>Country</h2></label>
             <select id="inputCountry" class="form-select" style="background-color:#EBDDD7">
@@ -54,16 +56,13 @@
             </select>
         </div>
         <div class="col">
-          <label for="inputCity" class="form-label"><h2>City</h2></label>
+          <label for="inputCity" class="form-label col"><h2>City</h2></label>
             <select id="inputCity" class="form-select"  style="background-color:#EBDDD7">
               <option selected>City</option>
               <option>US - Austin</option>
-              <option>US - Boulder</option>
-              <option>US - Portland</option>
               <option>US - New York City</option>
-              <option>US - Philadelphia</option>
-              <option>US - Los Angelas</option>
-              <option>MX - Puerto Escondid</option>
+              <option>US - Los Angeles</option>
+              <option>MX - Puerto Escondido</option>
               <option>MX - Mexico City</option>
               <option>FR - Paris</option>
               <option>DE - Berlin</option>
@@ -72,12 +71,205 @@
               <option>ESP - Madrid</option>
             </select>
         </div>
-        <div class="col-1" style="margin-top:30px">
-          <button type="submit" class="btn btn-dark"><h2>Submit</h2></button>
-        </div>
-      </div>
+        <button type="submit" class=" col-1 btn btn-dark" style="margin-top:30px"><h2>Submit</h2></button>
+      </form>
+
     </div>
   </div>
   
+  <div class="tableHolder hide" id="header">
+    <h2 class="text-center" style="font-size: 50px;">Your Adventures</h2>
+    <!-- austin -->
+    <table class="table hide mt-2" id="austin">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Eat some good BBQ.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Listen to some great music.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Go tubing.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- New York -->
+    <table class="table hide" id="newYork">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Go to Times Square.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>See SNL live.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Climb the Empire State Building.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Los Angeles -->
+    <table class="table hide mt-2" id="la">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Find a celebrity.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Visit Santa Monica Pier.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Visit the Hollywood Walk Of Fame.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Puerto Escondido -->
+    <table class="table hide mt-2" id="pe">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Go to the beach.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Shop at the mercado.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Go on a bike tour.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Mexico City -->
+    <table class="table hide mt-2" id="mxCity">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Climb the pyramids at Teotihuacan.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Hot balloon over Teotihuacan.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Float on the river at Xochimilco.</td>
+        </tr>
+        <tr>
+          <td scope="row">4</th>
+          <td>Visit La Casa Azul.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Paris -->
+    <table class="table hide mt-2" id="paris">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Visit the Louvre Museum.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Visit the Eiffel Tower.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Do a romantic dinner cruz on the Seine River.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Berlin -->
+    <table class="table hide mt-2" id="berlin">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Visit an ice bar.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Visit a brewery.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Munich -->
+    <table class="table hide mt-2" id="munich">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Visit the castles.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Go on a private tour.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Barcelona -->
+    <table class="table hide mt-2" id="barcelona">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Visit the Park Guell.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Visit Sagrada Familia.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Take in a flamenco show.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Madrid -->
+    <table class="table hide mt-2" id="madrid">
+      <thead>
+        <tr>
+          <td scope="col">1</th>
+          <td scope="col">Go on a Toledo Tour.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">2</th>
+          <td>Do a tapas and wine tasting tour.</td>
+        </tr>
+        <tr>
+          <td scope="row">3</th>
+          <td>Go on the Madrid Royal Palace Tour.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer style="background-color:rgb(235, 221, 215); padding-bottom: 2px;">
+    <p>Made By: Jacqueline Muralles</p>
+  </footer>
+
 </body>
 </html>
